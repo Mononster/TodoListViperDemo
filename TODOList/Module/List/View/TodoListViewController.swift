@@ -39,6 +39,7 @@ extension TodoListViewController: TodoListViewInput {
   }
 
   private func setupUI() {
+    self.navigationItem.title = "Viper+IGListKit"
     setupCollectionView()
     setupConstratints()
   }

@@ -14,7 +14,7 @@ final class TodoListDataWorker {
                   fetchLimit: Int,
                   completion: @escaping ([TodoItem], Int) -> ()) {
     // Simulate fetching from network
-    DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
       let items = FakeDataFactory.shared.generateTodoItems(offset: fetchOffset, limit: fetchLimit)
       completion(items, fetchOffset + fetchLimit)
     }
