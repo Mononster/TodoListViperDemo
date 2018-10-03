@@ -1,0 +1,6 @@
+framework module Pods_TODOListUITests {
+  umbrella header "Pods-TODOListUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
